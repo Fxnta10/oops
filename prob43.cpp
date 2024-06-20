@@ -8,8 +8,8 @@ int main() {
     const int numSubjects = 4;
 
     
-   int studentMarks[numStudents][numSubjects]
-    // or int studentMarks[5][4]
+   int studentMarks[numStudents][numSubjects];
+    // or int studentMarks[5][4];
 
     // Read marks for each student
     cout << "Enter marks for " << numStudents << " students in " << numSubjects << " subjects:" << endl;
