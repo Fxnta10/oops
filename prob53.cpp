@@ -21,7 +21,7 @@ double multiply(double a, double b) {
 
 double divide(double a, double b) {
     if (b == 0) {
-        throw runtime_error("Error: Division by zero!");
+        throw "Error: Division by zero!";
     }
     return a / b;
 }
@@ -39,8 +39,8 @@ int main() {
         cout << "Difference: " << subtract(num1, num2) << endl;
         cout << "Product: " << multiply(num1, num2) << endl;
         cout << "Quotient: " << divide(num1, num2) << endl;
-    } catch (const runtime_error& e) {
-        cerr << "Error: " << e.what() << endl; // Print error message from exception
+    } catch (const char* msg) {
+        cerr << "Error: " << msg << endl; // Print error message from exception
     }
 
 
